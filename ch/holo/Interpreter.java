@@ -35,10 +35,11 @@ public class Interpreter {
 		if(node instanceof AndNode) return interpret(((AndNode)node).a) && interpret(((AndNode)node).b);
 		if(node instanceof OrNode) return interpret(((OrNode)node).a) || interpret(((OrNode)node).b);
 		if(node instanceof XorNode) return interpret(((XorNode)node).a) != interpret(((XorNode)node).b);
+		if(node instanceof VarNode) return map.get(((VarNode) node).token.value);
+		
 		if(node instanceof ImplicationNode) {
 			boolean a = interpret(((ImplicationNode)node).a);
-			if(!a)
-				return true;
+			if(!a) return true;
 			boolean b = interpret(((ImplicationNode)node).b);
 			return b;
 		}
@@ -49,11 +50,8 @@ public class Interpreter {
 			return a==b;
 		}
 		if(node instanceof ParContentNode) {
-			boolean bool = interpret(((ParContentNode)node).node);
-			return bool;
-		}
-		if(node instanceof VarNode) {
-			return map.get(((VarNode) node).token.value);
+			boolean a = interpret(((ParContentNode)node).node);
+			return a;
 		}
 		
 		return false;
