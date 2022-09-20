@@ -22,7 +22,7 @@ p  | !p
 T  | F
 F  | T
 ### The AND operation.
-For a given proposition p and q, "p and q" is true only if both p and q are true, and is false otherwise. "p and q" is written here either as `p & q` or `p ∧ q`. <br>
+For given propositions p and q, "p and q" is true only if both p and q are true, and is false otherwise. "p and q" is written here either as `p & q` or `p ∧ q`. <br>
 p  | q  | p&q
 -- | -- | --
 T  | T  | T
@@ -31,7 +31,7 @@ F  | T  | F
 F  | F  | F
 
 ### The OR operation.
-For a given proposition p and q, "p or q" is true when at least one of p or q is true. "p or q" is written here either as `p | q` or `p ∨ q`. <br>
+For given propositions p and q, "p or q" is true when at least one of p or q is true. "p or q" is written here either as `p | q` or `p ∨ q`. <br>
 p  | q  | p&q
 -- | -- | --
 T  | T  | T
@@ -40,7 +40,7 @@ F  | T  | T
 F  | F  | F
 
 ### The XOR operation.
-For a given proposition p and q, "p xor q" is true when p and q have different truth values. "p xor q" is written here either as `p + q` or `p ⊕ q`. <br>
+For given propositions p and q, "p xor q" is true when p and q have different truth values. "p xor q" is written here either as `p + q` or `p ⊕ q`. <br>
 p  | q  | p&q
 -- | -- | --
 T  | T  | F
@@ -49,7 +49,7 @@ F  | T  | T
 F  | F  | F
 
 ### The IMPLICATION operation.
-For a given proposition p and q, "if p then q" is false only if p is true and q is false, and is true otherwise. "if p then q" is written here either as `p -> q` or `p → q`. <br>
+For given propositions p and q, "if p then q" is false only if p is true and q is false, and is true otherwise. "if p then q" is written here either as `p -> q` or `p → q`. <br>
 p  | q  | p -> q
 -- | -- | ----
 T  | T  | T
@@ -58,7 +58,7 @@ F  | T  | T
 F  | F  | T
 
 ### The BICONDITIONAL operation.
-For a given proposition p and q, "p if and only if q" is true when p and q have the same truth value. "p if and only if q" is written here either as `p <-> q` or `p ↔ q`. <br>
+For given propositions p and q, "p if and only if q" is true when p and q have the same truth value. "p if and only if q" is written here either as `p <-> q` or `p ↔ q`. <br>
 p  | q  | p <-> q
 -- | -- | ------
 T  | T  | T
